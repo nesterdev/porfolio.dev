@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Full Stack Developer",
+    company: "Café Orgánico",
+    description:
+      "Diseñé y estoy en desarrolló del sitio web de Café Orgánico (https://cafeorganico.co), una plataforma orientada a la presentación y comercialización de productos de café 100% orgánico, con enfoque en experiencia de usuario, rendimiento y escalabilidad. El proyecto incluyó la implementación de un sistema de navegación intuitivo, catálogo de productos, integración de procesos de compra y compatibilidad responsiva para dispositivos móviles. El resultado es una experiencia digital moderna que comunica la identidad de marca y facilita el acceso a productos de calidad.",
+    link: "https://cafeorganico.co",
+  },
+  {
+    date: "Marzo 2025",
+    title: "Principal Full Stack Engineer",
+    company: "GestoRes",
+    description:
+      "Responsable del diseño, desarrollo y mantenimiento de la plataforma central, incluyendo componentes y utilidades para la gestión de restaurantes, bares y negocios afines. La solución fue implementada bajo dos modelos de despliegue: local y en la nube, permitiendo su uso tanto en instalaciones con servidor propio como en entornos cloud. Este enfoque híbrido facilita la operación de múltiples restaurantes, optimiza costos operativos y garantiza el funcionamiento estable a través de redes LAN y Wi-Fi.",
+  },
+  {
+    date: "Septiembre 2023",
+    title: "Full Stack Engineer",
+    company: "Masibot - CM",
+    description:
+      "Responsable del desarrollo integral de la plataforma Masibot – CM, una solución avanzada de automatización de marketing y ventas sobre WhatsApp Web y canales digitales. Esto incluyó diseño de arquitecturas frontend y backend, integración de inteligencia artificial para chatbots conversacionales y herramientas de envío de campañas masivas, así como la implementación de funciones de extracción de contactos, gestión de catálogos, programación de campañas y automatizaciones personalizadas directamente integradas con WhatsApp Web y APIs relacionadas con CRM y ChatGPT. Gracias a las mejoras en la eficiencia del flujo de desarrollo, se optimizó la entrega de software y la experiencia de usuario, aumentando la adopción y efectividad de las campañas de comunicación y ventas.",
+    link: "https://chromewebstore.google.com/detail/masibot-cm-whats-app-mark/bcgallapcgpmkfkkikbiaeopplapaplm?pli=1"
+  },
+  {
+    date: "Septiembre 2020",
+    title: "Full Stack Engineer",
+    company: "Envios CM",
+    description:
+      "Creador y desarrollador principal de Envios CM, una plataforma de envíos masivos y automatización de comunicaciones diseñada para optimizar la interacción entre empresas y clientes. Fui responsable del diseño y desarrollo completo del sistema, incluyendo backend escalable, APIs propias, panel administrativo y flujos de envío segmentados, orientados a campañas, notificaciones y comunicación automatizada. Implementé integraciones con servicios externos, mecanismos de control y monitoreo de envíos, y mejoras continuas en rendimiento y estabilidad del software. El proyecto permitió automatizar procesos manuales, reducir tiempos operativos y escalar la comunicación digital de forma confiable, apoyado en prácticas modernas de desarrollo, versionado y despliegue continuo.",
+      link: "https://chromewebstore.google.com/detail/envios-cm-message-sender/oolhfpmniigfmppfgecldifnoiddaakm"
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
